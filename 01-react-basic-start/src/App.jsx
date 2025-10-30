@@ -1,10 +1,9 @@
-import Header from './components/Header'
+import Header from './components/Header/Header'
 import Legenda from './components/legenda'
 import Button from './components/Button/Button'
-import Introsec from './components/Introsec'
-import InteractiveMap from './components/Map'
+import Introsec from './components/Introsec/Introsec'
+import InteractiveMap from './components/Map/Map'
 import { BrowserRouter as Router } from 'react-router-dom'
-// Важные глобальные стили Leaflet
 import 'leaflet/dist/leaflet.css' 
 import Footer from './components/Footer/Footer'
 import { useState } from 'react'
@@ -20,12 +19,12 @@ import { ways, differences } from './data'
 import TabsSection from './components/TabSec'
 
 
-// Регистрируем необходимые компоненты Chart.js
+
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 
 
-// Компонент графика
+
 function Chart() {
   const pieChartData = {
     
@@ -68,7 +67,7 @@ function Chart() {
   );
 }
 
-// Компонент с легендой
+
 function LegendSection() {
   return (
     <div style={{ width: '350px', margin: '0 auto', padding: '15px'}}>
@@ -84,7 +83,7 @@ function LegendSection() {
     
   );
 }
-// Главный компонент
+
 export default function App() {
   const [ contentType, setContentType ] = useState(null)
   
@@ -107,7 +106,7 @@ export default function App() {
 
         <Introsec />  
         <h2>Карта отключений</h2>
-        <InteractiveMap />  
+          <InteractiveMap />
 
         <h1 className="centered">Аварийность по жалобам</h1>
         <h3 className="centered" style={{ color: '#666'}}>

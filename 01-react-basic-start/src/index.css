@@ -15,7 +15,7 @@ body {
 
 
 main {
-  max-width: 850px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
   padding-top: 2rem;
@@ -36,7 +36,9 @@ section ul li {
 
 }
 
-
+.desktop-layout {
+  display: block;
+}
 
 .content,
 p {
