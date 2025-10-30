@@ -1,0 +1,85 @@
+
+.footer {
+    background-color: #F0F0F0;
+    width: 100%; 
+    margin: 0;
+    padding: 0; 
+}
+
+.footer .nav-link:hover,
+.footer a:hover,
+.footer-link:hover {
+    background: none !important;
+    background-color: transparent !important;
+}
+
+
+.block-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 1rem; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+
+.ftitle {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #696969;
+}
+
+
+.flink {
+    color: #878787;
+    transition: text-decoration 0.2s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.flink:hover {
+    text-decoration: underline;
+    color: #9ca3af;
+}
+
+/* Списки */
+.flist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flist li {
+    margin-bottom: 0.5rem;
+}
+
+.fbottom {
+    border-top: 1px solid #F0F0F0;
+    padding: 1rem 1rem; 
+}
+
+.info {
+    color: #d1d5db;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Адаптивность для планшетов */
+@media (min-width: 768px) {
+    .block-1 {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem 2rem;
+    }
+}
+
+/* Адаптивность для десктопов */
+@media (min-width: 1024px) {
+    .block-1 {
+        padding: 2rem 1rem; 
+    }
+}

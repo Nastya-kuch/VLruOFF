@@ -1,0 +1,40 @@
+.bott {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+.count {
+        padding: 20px 20px;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(45deg, #FF3E3E, #FF954B, #FFF944);
+        color: #140101ff;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+        color: white;
+}
+
+.tg{
+    padding: 20px 20px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #FFF944, #5DF1AA, #507CFF);
+    color: #140101ff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+.tg:hover{
+    opacity: 0.5;
+}
+
+.count:hover{
+    opacity: 0.5;
+}
+
